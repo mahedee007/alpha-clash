@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-[#010313] min-h-screen bg-[url(./assets/background.png)] bg-no-repeat bg-center text-white">
+  <main>
+    <section id="first-page" class="flex flex-col items-center justify-center min-h-screen ">
+      <h1 class="anton-regular text-[170px] ">ALPHABET CLASH</h1>
+      <p class="poppins-semibold">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+      <button onclick="playStart()" id="play-btn" class="btn1 poppins-regular">Play</button>
+
+    </section>
+
+    <section id="second-page" class="flex flex-col items-center justify-center min-h-screen hidden">
+      <div class="artboard artboard-horizontal phone-6 bg-white opacity-80 backdrop-blur-lg border-[20px] border-black rounded-2xl">
+        <p class="text-white bg-black text-center poppins-semibold w-1/2 mx-auto rounded-md">Don't watch keyboard  while playing...</p>
+
+        <h1 class="text-black poppins-extrabold text-center text-8xl pt-24">Y</h1>
+      </div>
+
+      <div class="my-2 mt-24 flex w-full justify-center gap-1 text-black">
+        <kbd class="kbd">q</kbd>
+        <kbd class="kbd">w</kbd>
+        <kbd class="kbd">e</kbd>
+        <kbd class="kbd">r</kbd>
+        <kbd class="kbd">t</kbd>
+        <kbd class="kbd">y</kbd>
+        <kbd class="kbd">u</kbd>
+        <kbd class="kbd">i</kbd>
+        <kbd class="kbd">o</kbd>
+        <kbd class="kbd">p</kbd>
+      </div>
+      <div class="my-2 flex w-full justify-center gap-1 text-black">
+        <kbd class="kbd">a</kbd>
+        <kbd class="kbd">s</kbd>
+        <kbd class="kbd">d</kbd>
+        <kbd class="kbd">f</kbd>
+        <kbd class="kbd">g</kbd>
+        <kbd class="kbd">h</kbd>
+        <kbd class="kbd">j</kbd>
+        <kbd class="kbd">k</kbd>
+        <kbd class="kbd">l</kbd>
+      </div>
+      <div class="my-2 flex w-full justify-center gap-1 text-black">
+        <kbd class="kbd">z</kbd>
+        <kbd class="kbd">x</kbd>
+        <kbd class="kbd">c</kbd>
+        <kbd class="kbd">v</kbd>
+        <kbd class="kbd">b</kbd>
+        <kbd class="kbd">n</kbd>
+        <kbd class="kbd">m</kbd>
+        <kbd class="kbd">/</kbd>
+      </div>
+
+      <div class="flex justify-between items-center px-5 ">
+        <button class="btn bg-[#894189] text-white rounded-[30px] border-0">
+          
+          <span>Life</span>
+          <img src="./assets/Group 23.svg" alt="">
+          <span>1</span>
+        </button>
+        <button class="btn bg-[#360490] text-white rounded-[30px] border-0">
+          
+          <span>Score</span>
+          <img src="./assets/monetization_on.svg" alt="">
+          <span>1</span>
+        </button>
+      </div>
+
+    </section>
+    <section  class="flex justify-center items-center min-h-screen hidden">
+      <div class="flex flex-col items-center  backdrop-blur-lg text-black p-20 ">
+        
+        <p class="anton-regular text-4xl z-50">You Scored: 100</p>
+        <button class="btn1 poppins-regular">Play Again</button>
+      </div>
+    </section>
+  </main>
+    <script src="./scripts/utility.js"></script>
+
+    <script src="./scripts/alpha-clash.js"></script>
+</body>
+</html>
